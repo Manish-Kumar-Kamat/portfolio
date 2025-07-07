@@ -1,5 +1,7 @@
+Django>=4.2
+gunicorn
+whitenoise
 appdirs==1.4.4
-asgiref==3.8.1
 attrs==25.3.0
 Babel==2.9.1
 backoff==2.2.1
@@ -7,9 +9,7 @@ bcrypt==3.2.0
 beautifulsoup4==4.10.0
 blessings==1.7
 blinker==1.4
-bpython==0.22.1
 branca==0.6.0
-Brlapi==0.8.3
 cached-property==2.0.1
 certifi==2020.6.20
 chardet==4.0.0
@@ -28,7 +28,6 @@ Deprecated==1.2.14
 diff-match-patch==20241021
 distlib==0.3.9
 distro==1.7.0
-distro-info==1.1+ubuntu0.1
 Django==5.1.7
 django-appconf==1.1.0
 django-browser-reload==1.18.0
@@ -91,7 +90,6 @@ olefile==0.46
 opencage==2.3.0
 opencv-python==4.11.0.86
 openpyxl==3.1.5
-packaging==25.0
 pandas==2.2.3
 paramiko==2.9.3
 parso==0.8.1
@@ -124,9 +122,7 @@ PyPDF2==1.26.0
 pyperclip==1.8.2
 pyRFC3339==1.1
 pyserial==3.5
-python-apt==2.4.0+ubuntu2
 python-dateutil==2.8.1
-python-debian==0.1.43+ubuntu1.1
 python-ldap==3.4.0
 python-stdnum==1.17
 pytz==2022.1
@@ -149,8 +145,6 @@ tablib==3.8.0
 tailwind==3.1.5b0
 typing_extensions==4.8.0
 tzdata==2025.2
-ubuntu-advantage-tools==8001
-ubuntu-drivers-common==0.0.0
 ufw==0.36.1
 unattended-upgrades==0.1
 urllib3==1.26.5
