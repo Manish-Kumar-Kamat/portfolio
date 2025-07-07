@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4grjzfu1uho_rug6!9o313p4gns#^y!$bbmg5lj%5=kv1rf*ip
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,6 +121,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'portfolio' / 'static']
 TEMPLATES[0]['DIRS'] = [BASE_DIR / 'portfolio' / 'templates']
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # ← Add this line
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio', 'static')]  # Your custom static files
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
