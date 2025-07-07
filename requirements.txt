@@ -20,7 +20,6 @@ cryptography==3.4.8
 curtsies==0.3.10
 cwcwidth==0.1.6
 decorator==4.4.2
-defer==1.0.6
 defusedxml==0.7.1
 Deprecated==1.2.14
 diff-match-patch==20241021
