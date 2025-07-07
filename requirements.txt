@@ -17,7 +17,6 @@ charset-normalizer==3.2.0
 click==8.0.3
 colorama==0.4.4
 cryptography==3.4.8
-cupshelpers==1.0
 curtsies==0.3.10
 cwcwidth==0.1.6
 decorator==4.4.2
