@@ -42,7 +42,6 @@ ebaysdk==2.1.5
 et_xmlfile==2.0.0
 face-recognition==1.3.0
 face-recognition-models==0.3.0
-fail2ban==0.11.2
 fasteners==0.14.1
 filelock==3.18.0
 folium==0.14.0
