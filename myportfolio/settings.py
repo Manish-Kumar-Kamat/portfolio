@@ -117,23 +117,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-# settings.py
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',  # Or os.path.join(BASE_DIR, 'static') for older versions
+    os.path.join(BASE_DIR, 'portfolio', 'static')
 ]
 
-# For production (Render etc.)
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [BASE_DIR / 'portfolio' / 'static']
-TEMPLATES[0]['DIRS'] = [BASE_DIR / 'portfolio' / 'templates']
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # ← Add this line
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio', 'static')]  # Your custom static files
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
+TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'portfolio', 'templates')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
