@@ -233,3 +233,33 @@ a:hover {
   color: var(--primary-dark);
   text-decoration: underline;
 }
+
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+[data-animate].animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.typing-name {
+  font-size: 3.2rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #f9d423);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineGradient 4s ease infinite;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
