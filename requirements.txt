@@ -1,3 +1,7 @@
+# 🛠 Required for building wheels and numpy
+setuptools>=65.5.0
+wheel
+
 # Core Django
 Django>=4.2,<5.3
 gunicorn
@@ -42,7 +46,10 @@ freezegun==1.1.0
 future==0.18.2
 Jinja2==3.0.3
 MarkupSafe==2.0.1
+
+# 🔧 Fixed numpy version for compatibility with Python 3.11
 numpy>=1.25,<1.26
+
 openpyxl==3.1.5
 pandas==2.2.3
 passlib==1.7.4
